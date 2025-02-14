@@ -1,11 +1,19 @@
 from django.shortcuts import render
 from django.contrib import messages
+from django.core.paginator import Paginator
+
 from .forms import ContactForm
 from .models import ContactMessage, Project 
 
+def home(request):
+    return render(request, 'portfolio/home.html')
+
 def portfolio(request):
-    projects = Project.objects.all()
-    return render(request, 'portfolio/portfolio.html', {'projects': projects})
+    projects = Project.objects.all().order_by('-created_at')
+    paginator = Paginator(projects, 5)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'portfolio/portfolio.html', {'page_obj': page_obj})
 
 def contact(request):
     form = ContactForm()

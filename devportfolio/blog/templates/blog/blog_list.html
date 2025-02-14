@@ -2,19 +2,19 @@
 
 {% block content %}
 
-<h2>My Blog</h2>
+<h2 class="fst-italic">My Blog</h2>
 
 <!-- Search Form -->
-<form method="GET" action="">
-    <input type="text" name="q" placeholder="Search blog posts..." value="{{ query }}">
-    <button type="submit">Search</button>
+<form method="GET" action="" class="fst-italic">
+    <input type="text" name="q" placeholder="Search blog posts..." value="{{ query }}" class="fst-italic">
+    <button type="submit" class="fst-italic">Search</button>
 </form>
 
 <hr>
 
 <!-- Show message if no posts found -->
 {% if page_obj.paginator.count == 0 %}
-    <p>No blog posts found.</p>
+    <p class="fst-italic">No blog posts found.</p>
 {% else %}
     {% for post in page_obj %}
         <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 15px;">
@@ -33,7 +33,7 @@
         <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
     {% endif %}
 
-    <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+    <span class="fst-italic">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
 
     {% if page_obj.has_next %}
         <a href="?page={{ page_obj.next_page_number }}">Next</a>
