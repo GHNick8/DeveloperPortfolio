@@ -1,17 +1,16 @@
+<!-- Temporary no blog available -->
+
 {% extends 'base.html' %}
 
 {% block content %}
 
 <h2 class="fst-italic">My Blog</h2>
-
 <!-- Search Form -->
 <form method="GET" action="" class="fst-italic">
     <input type="text" name="q" placeholder="Search blog posts..." value="{{ query }}" class="fst-italic">
     <button type="submit" class="fst-italic">Search</button>
 </form>
-
 <hr>
-
 <!-- Show message if no posts found -->
 {% if page_obj.paginator.count == 0 %}
     <p class="fst-italic">No blog posts found.</p>
@@ -25,16 +24,13 @@
         </div>
     {% endfor %}
 {% endif %}
-
 <!-- Pagination -->
 <div style="margin-top: 20px;">
     {% if page_obj.has_previous %}
         <a href="?page=1">First</a>
         <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
     {% endif %}
-
     <span class="fst-italic">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-
     {% if page_obj.has_next %}
         <a href="?page={{ page_obj.next_page_number }}">Next</a>
         <a href="?page={{ page_obj.paginator.num_pages }}">Last</a>

@@ -2,33 +2,35 @@
 
 {% block content %}
 
-<div class="container">
-    <h2 class="fst-italic">Contact Me</h2>
+<div class="container-sm">
+    <div class="row justify-content-start">
+        <h2 class="fst-italic">Contact Me</h2>
 
-    {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-success fst-italic text-center" role="alert" style="width: 400px;">
-                {{ message }}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success fst-italic text-center" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST" class="fst-italic">
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.name.label_tag }}
+                {{ form.name }}
             </div>
-        {% endfor %}
-    {% endif %}
-
-    <form method="POST" class="fst-italic">
-        {% csrf_token %}
-        <div class="mb-3">
-            {{ form.name.label_tag }}
-            {{ form.name }}
-        </div>
-        <div class="mb-3">
-            {{ form.email.label_tag }}
-            {{ form.email }}
-        </div>
-        <div class="mb-3">
-            {{ form.message.label_tag }}
-            {{ form.message }}
-        </div>
-        <button class="btn btn-outline-success w-100 fst-italic fw-bold" type="submit">Send</button>
-    </form>
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="mb-3">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+            <button class="btn btn-outline-success w-100 fst-italic fw-bold" type="submit">Send</button>
+        </form>
+    </div>
 </div>
 
 {% endblock %}

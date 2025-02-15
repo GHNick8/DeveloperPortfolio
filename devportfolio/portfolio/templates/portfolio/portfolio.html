@@ -1,19 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <div class="container">
     <h2 class="fst-italic text-center mb-4">Mijn Portfolio</h2>
     <p class="lead text-center mb-5">"Hier kun je mijn ervaringen lezen en projecten bekijken. 😁"</p>
-
     {% for project in page_obj %}
     <div class="mb-5">
         <!-- Title & Description -->
         <h3 class="fst-italic">{{ project.title }}</h3>
-        <p class="text-muted">{{ project.description }}</p>
-        
+        <p class="text-muted">{{ project.description }}</p>      
         <!-- Tech Stack -->
         <p class="fst-italic"><strong>Tech Stack:</strong> {{ project.tech_stack }}</p>
-        
         <!-- GitHub & Live Demo Buttons -->
         <div class="mb-3 fst-italic">
             {% if project.github_link %}
@@ -23,14 +21,12 @@
             <a href="{{ project.live_demo }}" target="_blank" class="btn btn-outline-secondary fw-bold btn-sm">Live Demo</a>
             {% endif %}
         </div>
-
         <!-- Image Below -->
         {% if project.image %}
         <img src="{{ project.image.url }}" class="portfolio-image shadow-sm" alt="{{ project.title }}">
         {% endif %}
     </div>
     {% endfor %}
-
     <!-- Pagination Controls -->
     <nav aria-label="Portfolio Pagination">
         <ul class="pagination justify-content-center">
@@ -42,11 +38,9 @@
                     <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Vorige</a>
                 </li>
             {% endif %}
-
             <li class="page-item disabled">
                 <span class="page-link">Pagina {{ page_obj.number }} van {{ page_obj.paginator.num_pages }}</span>
             </li>
-
             {% if page_obj.has_next %}
                 <li class="page-item">
                     <a class="page-link" href="?page={{ page_obj.next_page_number }}">Volgende</a>
@@ -58,7 +52,6 @@
         </ul>
     </nav>
 </div>
-
 <!-- Scroll to Top Button -->
 <button onclick="scrollToTop()" id="scrollBtn" class="btn btn-success rounded-circle shadow">↑ </button>
 

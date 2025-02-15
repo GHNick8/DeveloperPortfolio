@@ -1,33 +1,28 @@
+<!-- Temporary no blog available -->
+
 {% extends 'base.html' %}
 
 {% block content %}
 
 <h2>{{ post.title }}</h2>
 <p><em>Published on {{ post.created_at|date:"F d, Y" }}</em></p>
-
 <!-- Display blog image if available -->
 {% if post.image %}
     <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin-bottom: 15px;">
 {% endif %}
-
 <!-- Blog Content -->
 <div style="border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
     {{ post.content|safe }}
 </div>
-
 <hr>
-
 <!-- Navigation Buttons -->
 <div style="margin-top: 20px;">
     {% if previous_post %}
         <a href="{% url 'blog_detail' previous_post.slug %}">← Previous: {{ previous_post.title }}</a>
     {% endif %}
-
     <a href="{% url 'blog_list' %}" style="margin-left: 15px;">Back to Blog</a>
-
     {% if next_post %}
         <a href="{% url 'blog_detail' next_post.slug %}" style="margin-left: 15px;">Next: {{ next_post.title }} →</a>
     {% endif %}
 </div>
-
 {% endblock %}
