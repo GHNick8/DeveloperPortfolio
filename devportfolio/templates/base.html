@@ -10,6 +10,8 @@
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
               crossorigin="anonymous">
         {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/stijl.css' %}">
     </head>
@@ -20,7 +22,7 @@
                 <div class="container d-flex justify-content-between align-items-center">
                     <!-- Logo & Title -->
                     <a class="navbar-brand d-flex align-items-center ps-3" href="/">
-                        <img src="{% static 'images/logo.png' %}" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+                        <img src="{% static 'images/logo.png' %}" alt="Logo" class="me-2" style="width: 55px; height: 55px;">
                         <span class="fst-italic fs-4 fw-bold">My Developers Sphere</span>
                     </a>
                     <!-- Toggler for Mobile View -->
