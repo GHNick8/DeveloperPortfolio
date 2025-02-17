@@ -63,11 +63,11 @@ WSGI_APPLICATION = 'devportfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-IS_RENDER = os.getenv('RENDER') is not None
+DATABASE_URL = os.getenv("DATABASE_URL") 
 
-if IS_RENDER:
+if DATABASE_URL:
     DATABASES = {
-        'default': dj_database_url.config(default=os.getenv("DATABASE_URL"))
+        'default': dj_database_url.config(default=DATABASE_URL)
     }
 else:
     DATABASES = {
@@ -76,9 +76,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
-# Debug mode: Enabled locally, disabled on Render
-DEBUG = not IS_RENDER
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
