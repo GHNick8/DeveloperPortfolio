@@ -60,7 +60,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'devportfolio.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -68,7 +67,7 @@ IS_RENDER = os.getenv('RENDER') is not None
 
 if IS_RENDER:
     DATABASES = {
-        'default': dj_database_url.config(conn_max_age=600)
+        'default': dj_database_url.config(default=os.getenv("DATABASE_URL"))
     }
 else:
     DATABASES = {
@@ -99,7 +98,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -110,7 +108,6 @@ TIME_ZONE = 'Europe/Brussels'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
