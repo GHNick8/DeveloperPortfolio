@@ -4,7 +4,7 @@ from decouple import config
 import os
 import dj_database_url
 
-SECRET_KEY = config('SECRET_KEY') 
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-default-secret-key')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
