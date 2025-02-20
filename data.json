@@ -1,41 +1,54 @@
 [
 {
-  "model": "portfolio.project",
-  "pk": 1,
-  "fields": {
-    "title": "Anime Website - Otaku Odyssey",
-    "description": "Met veel plezier deel ik mijn project: Otaku Odyssey! Dankzij mijn Diploma Full Stack Developer heb ik deze website kunnen ontwikkelen, waarbij ik zowel mijn frontend- als backendvaardigheden heb toegepast.\r\n\r\nWat heb ik gebouwd?\r\nEen interactieve website waar anime-fans:\r\nPlotholes en theorieÃ«n kunnen verkennen\r\nLeuke quizzen kunnen doen zoals \"Welke anime-kracht zou jij hebben?\"\r\nEen gebruiksvriendelijke en mobile-friendly ervaring krijgen\r\n\r\nWelke technologieÃ«n heb ik gebruikt?\r\nFrontend: HTML, CSS, JavaScript & jQuery\r\nBackend: JSON-data voor dynamische quizzen\r\nHosting: GitHub Pages\r\n\r\nDit project was een geweldige kans om de kennis uit mijn Full Stack Developer opleiding in praktijk te brengen. Het heeft me niet alleen geholpen mijn technische vaardigheden te verfijnen, maar ook te leren hoe ik interactieve en toegankelijke content kan creÃ«ren.\r\n\r\nWil je het resultaat zien? Bekijk de website via de Live demo link!",
-    "tech_stack": "HTML, CSS, JavaScript, jQuery, JSON",
-    "github_link": "https://github.com/GHNick8/OtakuOdyssey",
-    "live_demo": "https://ghnick8.github.io/OtakuOdyssey/",
-    "image": "project_images/screenshot.png",
-    "created_at": "2025-02-13T18:51:24.909Z"
-  }
+    "model": "portfolio.project",
+    "pk": 1,
+    "fields": {
+        "title": "Anime Website - Otaku Odyssey",
+        "description": "Met veel plezier deel ik mijn project: Otaku Odyssey! Dankzij mijn Diploma Full Stack Developer heb ik deze website kunnen ontwikkelen, waarbij ik zowel mijn frontend- als backendvaardigheden heb toegepast.\r\n\r\nWat heb ik gebouwd?\r\nEen interactieve website waar anime-fans:\r\nPlotholes en theorieën kunnen verkennen\r\nLeuke quizzen kunnen doen zoals \"Welke anime-kracht zou jij hebben?\"\r\nEen gebruiksvriendelijke en mobile-friendly ervaring krijgen\r\n\r\nWelke technologieën heb ik gebruikt?\r\nFrontend: HTML, CSS, JavaScript & jQuery\r\nBackend: JSON-data voor dynamische quizzen\r\nHosting: GitHub Pages\r\n\r\nDit project was een geweldige kans om de kennis uit mijn Full Stack Developer opleiding in praktijk te brengen. Het heeft me niet alleen geholpen mijn technische vaardigheden te verfijnen, maar ook te leren hoe ik interactieve en toegankelijke content kan creëren.\r\n\r\nWil je het resultaat zien? Bekijk de website via de Live demo link!",
+        "tech_stack": "HTML, CSS, JavaScript, jQuery, JSON",
+        "github_link": "https://github.com/GHNick8/OtakuOdyssey",
+        "live_demo": "https://ghnick8.github.io/OtakuOdyssey/",
+        "image": "project_images/screenshot.png",
+        "created_at": "2025-02-13T18:51:24.909Z"
+    }
 },
 {
-  "model": "portfolio.project",
-  "pk": 2,
-  "fields": {
-    "title": "Django To-Do List",
-    "description": "Ik heb mijn Django To-Do List project succesvol gedployed op Render, met PostgreSQL als database en geoptimaliseerde instellingen! \r\n\r\nDit project is een direct resultaat van de kennis en vaardigheden die ik heb opgedaan tijdens mijn Full Stack Developer opleiding. Tijdens het ontwikkelen en deployen heb ik praktische ervaring opgedaan met Django, PostgreSQL, en Render deployment.\r\n\r\nHet deployen via Render bracht enkele uitdagingen met zich mee:\r\nALLOWED_HOSTS & 400 errors: Opgelost door juiste configuratie in settings.py.\r\nPostgreSQL database verbindingen: Correct ingesteld met DATABASE_URL.\r\nAutomatische migraties: Opgelost door een verbeterde Build Command in Render.\r\nDebugging & Google Skills: Soms was het zoeken en experimenteren, maar dat hoort erbij!\r\n\r\nWat heb ik geleerd?\r\nDiepgaand begrip van Django & Render Deployment , van lokale ontwikkeling tot live hosting.\r\nHet belang van environment variables en veilige configuraties.\r\nHoe ik problemen oplos in een productieomgeving.\r\n\r\nBenieuwd naar het project? Bekijk de website via de Live demo link!",
-    "tech_stack": "Python, Django, PostgreSQL, Render",
-    "github_link": "https://github.com/GHNick8/Django-todo-list",
-    "live_demo": "https://django-todo-list-ce0s.onrender.com/",
-    "image": "project_images/screenshot1.png",
-    "created_at": "2025-02-13T18:56:34.696Z"
-  }
+    "model": "portfolio.project",
+    "pk": 2,
+    "fields": {
+        "title": "Django To-Do List",
+        "description": "Ik heb mijn Django To-Do List project succesvol gedployed op Render, met PostgreSQL als database en geoptimaliseerde instellingen! \r\n\r\nDit project is een direct resultaat van de kennis en vaardigheden die ik heb opgedaan tijdens mijn Full Stack Developer opleiding. Tijdens het ontwikkelen en deployen heb ik praktische ervaring opgedaan met Django, PostgreSQL, en Render deployment.\r\n\r\nHet deployen via Render bracht enkele uitdagingen met zich mee.\r\nALLOWED_HOSTS & 400 errors: Opgelost door juiste configuratie in settings.py.\r\nPostgreSQL database verbindingen: Correct ingesteld met DATABASE_URL.\r\nAutomatische migraties: Opgelost door een verbeterde Build Command in Render.\r\nDebugging & Google Skills: Soms was het zoeken en experimenteren, maar dat hoort erbij!\r\n\r\nWat heb ik geleerd?\r\nDiepgaand begrip van Django & Render Deployment , van lokale ontwikkeling tot live hosting.\r\nHet belang van environment variables en veilige configuraties.\r\nHoe ik problemen oplos in een productieomgeving.\r\n\r\nBenieuwd naar het project? Bekijk de website via de Live demo link!",
+        "tech_stack": "Python, Django, PostgreSQL, Render",
+        "github_link": "https://github.com/GHNick8/Django-todo-list",
+        "live_demo": "https://django-todo-list-ce0s.onrender.com/",
+        "image": "project_images/screenshot1.png",
+        "created_at": "2025-02-13T18:56:34.696Z"
+    }
 },
 {
-  "model": "portfolio.project",
-  "pk": 3,
-  "fields": {
-    "title": "C# - Movie Library Application",
-    "description": "Dit project heb ik ontwikkeld om mijn C# en .NET vaardigheden te verfijnen en om een praktische applicatie te bouwen die een gepersonaliseerde filmcollectie beheert.\r\n\r\nMovieLibrary stelt gebruikers in staat om films te beheren met functies zoals zoekopdrachten, beoordelingen en categorisering. De applicatie biedt een intuÃ¯tieve UI en ondersteunt exportmogelijkheden naar CSV en Excel.\r\n\r\nTechnologieï¿½n & Tools\r\nC# & .NET voor Core backend development, WinForms voor de gebruikersinterface, SQL Server voor databasebeheer, EPPlus voor export naar Excel en Unit Testing & Best Practices voor schaalbaarheid en onderhoudbaarheid.\r\n\r\nWat ik heb geleerd... Diepere kennis van C# en .NET development, werken met databases, best practices in UI/UX voor Windows Forms applicaties, toepassen van architectuurprincipes voor schaalbare software, oplossen van real-world softwareproblemen & debugging.\r\n\r\nDit project heeft mij geholpen om mijn C#-vaardigheden, software-architectuurkennis en probleemoplossend vermogen verder te ontwikkelen! \r\n\r\nGithub repo beschikbaar.",
-    "tech_stack": "C#, SQL",
-    "github_link": "https://github.com/GHNick8/MovieLibrary",
-    "live_demo": null,
-    "image": "project_images/screenshot2.png",
-    "created_at": "2025-02-14T17:07:35.642Z"
-  }
+    "model": "portfolio.project",
+    "pk": 3,
+    "fields": {
+        "title": "C# - Movie Library Application",
+        "description": "Dit project heb ik ontwikkeld om mijn C# en .NET vaardigheden te verfijnen en om een praktische applicatie te bouwen die een gepersonaliseerde filmcollectie beheert.\r\n\r\nMovieLibrary stelt gebruikers in staat om films te beheren met functies zoals zoekopdrachten, beoordelingen en categorisering. De applicatie biedt een intuïtieve UI en ondersteunt exportmogelijkheden naar CSV en Excel.\r\n\r\nTechnologieën & Tools\r\nC# & .NET voor Core backend development, WinForms voor de gebruikersinterface, SQL Server voor databasebeheer, EPPlus voor export naar Excel en Unit Testing & Best Practices voor schaalbaarheid en onderhoudbaarheid.\r\n\r\nWat ik heb geleerd... Diepere kennis van C# en .NET development, werken met databases, best practices in UI/UX voor Windows Forms applicaties, toepassen van architectuurprincipes voor schaalbare software, oplossen van real-world softwareproblemen & debugging.\r\n\r\nDit project heeft mij geholpen om mijn C#-vaardigheden, software-architectuurkennis en probleemoplossend vermogen verder te ontwikkelen! \r\n\r\nGithub repo beschikbaar.",
+        "tech_stack": "C#, SQL",
+        "github_link": "https://github.com/GHNick8/MovieLibrary",
+        "live_demo": null,
+        "image": "project_images/screenshot2.png",
+        "created_at": "2025-02-14T17:07:35.642Z"
+    }
+},
+{
+    "model": "portfolio.project",
+    "pk": 4,
+    "fields": {
+        "title": "TDEE Calculator Web App",
+        "description": "Mijn nieuwste project staat live: een TDEE Calculator Web App! \r\n\r\nTijdens mijn reis in webontwikkeling wilde ik een praktisch en nuttig project bouwen waarmee gebruikers hun dagelijkse energiebehoefte (TDEE) kunnen berekenen. Dit project combineert Spring Boot, Thymeleaf en Bootstrap, en is nu volledig gedeployed op Render! \r\n\r\nWat doet deze webapp?\r\nBerekening van BMR & TDEE met de Harris-Benedict-formule, keuze uit verschillende activiteitsniveaus (van weinig actief tot extreem actief), duidelijke, gebruiksvriendelijke interface met Bootstrap styling, Live foutvalidatie met JavaScript, interactieve grafieken (Chart.js) om de TDEE-waarden visueel te tonen, volledig gedeployed op Render met Docker.  \r\n\r\nWat heb ik geleerd?\r\nSpring Boot & Thymeleaf: Hoe server-side rendering en dynamische content werkt, Client-side validatie: Directe feedback met JavaScript en Bootstrap, Chart.js: Hoe je TDEE-gegevens op een visuele en intuïtieve manier kunt weergeven, Docker & Deployment: Hoe je een Spring Boot-app containerized en live zet op Render.\r\n\r\nWat denk jij van dit project? Heb je ooit je TDEE berekend?\r\nWil je een kijkje nemen? Bekijk het project via onderstaande link(s).",
+        "tech_stack": "Java, JavaScript, Spring Boot, Docker, Render",
+        "github_link": "https://github.com/GHNick8/TDEECalculator",
+        "live_demo": "https://tdeecalculator.onrender.com",
+        "image": "project_images/screenshotDocker02.png",
+        "created_at": "2025-02-20T20:25:26.348Z"
+    }
 }
 ]
