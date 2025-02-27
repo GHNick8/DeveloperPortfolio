@@ -70,3 +70,20 @@ form textarea {
 footer {
     line-height: 40px;
 }
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 40px; 
+        height: auto;
+    }
+
+    .navbar-brand {
+        font-size: 1rem; 
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 18px; 
+    }
+}
